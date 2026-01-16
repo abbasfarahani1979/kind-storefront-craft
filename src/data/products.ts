@@ -8,6 +8,8 @@ export interface Product {
   name: string;
   price: number;
   originalPrice?: number;
+  price_type: string;
+  setupFeeId: string;
   image: string;
   onSale?: boolean;
   description?: string;
@@ -16,15 +18,21 @@ export interface Product {
 export const products: Product[] = [
   {
     id: 1,
-    name: "VoxConnect",
-    price: 12.50,
+    name: "VoxConnectPlus",
+    price: 24.99,
+    originalPrice: 35.00,
+    price_type: "subscription",
+    setupFeeId: "price_setup_voxconnect", // 40$ one-time
     image: voxconnect,
-    description: "Premium VoIP calling service for businesses",
+    description: "Receive call anywhere",
   },
   {
     id: 2,
     name: "VoxSMS",
-    price: 45.00,
+    price: 24.99,
+    originalPrice: 45.00,
+    price_type: "subscription",
+    setupFeeId: "price_setup_voxsms", // 280$ one-time
     image: voxsms,
     description: "SMS messaging service for customer communication",
   },
@@ -33,15 +41,27 @@ export const products: Product[] = [
     name: "Ir-Bridge",
     price: 9.99,
     originalPrice: 15.00,
+    price_type: "subscription",
     image: irbridge,
     onSale: true,
     description: "International calling bridge for global communication",
   },
   {
-    id: 4,
+    id: 1,
+    name: "VoxConnect",
+    price: 14.99,
+    originalPrice: 45.00,
+    price_type: "subscription",
+    setupFeeId: "price_setup_voxconnect", // 40$ one-time
+    image: voxconnect,
+    description: "Receive call anywhere",
+  },
+  {
+    id: 6,
     name: "Antivirus",
     price: 19.99,
     originalPrice: 35.00,
+    price_type: "one-time",
     image: antivirus,
     onSale: true,
     description: "Complete cybersecurity protection for your devices",
