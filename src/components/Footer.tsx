@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
-import logo from "@/assets/logo.svg";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <img src={logo} alt="TheNorthNet" className="h-12 brightness-0 invert" />
+            <img src={logo} alt="NorthAutomation" className="h-12" />
             <p className="text-secondary/80 text-sm leading-relaxed">
               Providing innovative technology solutions for businesses and individuals across Canada.
             </p>
@@ -77,7 +77,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3 text-sm text-secondary/70">
                 <Mail className="h-5 w-5 flex-shrink-0 text-primary" />
-                <span>info@thenorthnet.ca</span>
+                <span>info@northautomation.ca</span>
               </li>
             </ul>
           </div>
@@ -85,7 +85,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-secondary/20 mt-10 pt-6 text-center text-secondary/60 text-sm">
-          <p>&copy; {new Date().getFullYear()} TheNorthNet. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} NorthAutomation. All rights reserved.</p>
         </div>
       </div>
     </footer>
