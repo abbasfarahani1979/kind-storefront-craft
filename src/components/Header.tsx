@@ -28,7 +28,7 @@ const Header = ({ cartCount = 0 }: HeaderProps) => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
-            <img src={logo} alt="NorthAutomation" className="h-14 md:h-16" />
+            <img src={logo} alt="NorthAutomation" className="h-24 md:h-28" />
           </Link>
 
           {/* Right Actions */}
