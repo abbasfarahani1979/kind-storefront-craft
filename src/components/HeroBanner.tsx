@@ -1,6 +1,9 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import heroTech from "@/assets/hero-tech.svg";
+import heroCommunication from "@/assets/hero-communication.svg";
+import heroSecurity from "@/assets/hero-security.svg";
 
 interface Slide {
   image: string;
@@ -10,17 +13,17 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    image: "/hero-tech.svg",
+    image: heroTech,
     title: "IT Solutions & Support",
     subtitle: "24/7 Technical Support for Your Business",
   },
   {
-    image: "/hero-communication.svg",
+    image: heroCommunication,
     title: "Communication Services",
     subtitle: "VoIP, SMS, and More for Modern Businesses",
   },
   {
-    image: "/hero-security.svg",
+    image: heroSecurity,
     title: "Cybersecurity Solutions",
     subtitle: "Protect Your Digital Assets",
   },
