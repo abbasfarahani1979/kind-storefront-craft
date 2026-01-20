@@ -1,9 +1,9 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
-import heroTech from "@/assets/hero-tech.svg";
-import heroCommunication from "@/assets/hero-communication.svg";
-import heroSecurity from "@/assets/hero-security.svg";
+import heroTech from "@/assets/hero-tech.jpg";
+import heroCommunication from "@/assets/hero-communication.jpg";
+import heroSecurity from "@/assets/hero-security.jpg";
 
 interface Slide {
   image: string;
